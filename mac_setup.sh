@@ -16,7 +16,7 @@ if [ ! "$1" == "force" ]; then
   echo "Take a look at this setup script first to make sure you feel"
   echo "confident about this!"
   echo 
-  echo "Run './$0 force' if you want to run it anyway"
+  echo "Run '$0 force' if you want to run it anyway"
   exit 0
 fi
 
@@ -50,7 +50,7 @@ full_link()
 
   echo "* Creating ~/$target_link symlink"
   if [ -e ~/$target_link ]; then
-    rm ~/$target_link
+    rm -rf ~/$target_link
   fi
   ln -s $config_path/$source_path ~/$target_link
 }
@@ -79,5 +79,3 @@ fi
 link_to_config .vim
 link_to_config .viminfo
 link_to_config .vimmer
-
-chmod 744 $config_path/scripts
