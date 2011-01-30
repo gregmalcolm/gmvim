@@ -79,3 +79,5 @@ fi
 link_to_config .vim
 link_to_config .viminfo
 link_to_config .vimmer
+link_to_config .vimrc
+link_to_config .gvimrc
