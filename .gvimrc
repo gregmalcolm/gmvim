@@ -69,3 +69,113 @@
 " Run file in shell mode with ruby
 "  nnoremap <D-r> <Plug>RubyFileRun
 "  map <D-r> <Plug>RubyFileRun
+
+" shortcuts for running tests
+  nmap <Leader>ra :wa<cr> :RunAllRubyTests<cr>
+  nmap <Leader>rc :wa<cr> :RunRubyFocusedContext<cr>
+  nmap <Leader>rf :wa<cr> :RunRubyFocusedUnitTest<cr>
+  nmap <Leader>rl :wa<cr> :RunLastRubyTest<cr>
+
+" open project view
+  nmap <F2> :NERDTreeToggle<cr>
+ 
+" go to the alternate file (previous buffer) with g-enter
+  nmap g
+
+" ack for project-wide searching (TRAILING WHITESPACE IS INTENTIONAL)
+  nmap g/ :Ack! 
+  nmap g* :Ack! -w <C-R><C-W> 
+  nmap ga :AckAdd! 
+  nmap gn :cnext<cr>
+  nmap gp :cprev<cr>
+  nmap gq :ccl<cr>
+
+" shortcuts for frequenly used files
+  nmap gs :e db/schema.rb<cr>
+  nmap gr :e config/routes.rb<cr>
+
+" # to surround with ruby string interpolation
+  let g:surround_35 = "#{\r}"
+" - to surround with no-output erb tag
+  let g:surround_45 = "<% \r %>"
+" = to surround with output erb tag
+  let g:surround_61 = "<%= \r %>"
+
+" mapping the jumping between splits. Hold control while using vim nav.
+  nmap <C-J> <C-W>j
+  nmap <C-K> <C-W>k
+  nmap <C-H> <C-W>h
+  nmap <C-L> <C-W>l
+
+" handy macro expansion
+  abbrev Lidsa Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  iabbrev rdebug require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger
+  abbrev hte the
+
+" rails.vim mappings
+  map <Leader>oc :Rcontroller<Space>
+  map <Leader>ov :Rview<Space>
+  map <Leader>om :Rmodel<Space>
+  map <Leader>oh :Rhelper<Space>
+  map <Leader>oj :Rjavascript<Space>
+  map <Leader>os :Rstylesheet<Space>
+  map <Leader>oi :Rintegration<Space>
+
+" select the lines which were just pasted
+  nnoremap vv `[V`]
+
+" shortcuts for running tests
+  nmap <Leader>ra :wa<cr> :RunAllRubyTests<cr>
+  nmap <Leader>rc :wa<cr> :RunRubyFocusedContext<cr>
+  nmap <Leader>rf :wa<cr> :RunRubyFocusedUnitTest<cr>
+  nmap <Leader>rl :wa<cr> :RunLastRubyTest<cr>
+
+" open project view
+  nmap <F2> :NERDTreeToggle<cr>
+ 
+" go to the alternate file (previous buffer) with g-enter
+  nmap g
+
+" ack for project-wide searching (TRAILING WHITESPACE IS INTENTIONAL)
+  nmap g/ :Ack! 
+  nmap g* :Ack! -w <C-R><C-W> 
+  nmap ga :AckAdd! 
+  nmap gn :cnext<cr>
+  nmap gp :cprev<cr>
+  nmap gq :ccl<cr>
+
+" shortcuts for frequenly used files
+  nmap gs :e db/schema.rb<cr>
+  nmap gr :e config/routes.rb<cr>
+
+" # to surround with ruby string interpolation
+  let g:surround_35 = "#{\r}"
+" - to surround with no-output erb tag
+  let g:surround_45 = "<% \r %>"
+" = to surround with output erb tag
+  let g:surround_61 = "<%= \r %>"
+
+" mapping the jumping between splits. Hold control while using vim nav.
+  nmap <C-J> <C-W>j
+  nmap <C-K> <C-W>k
+  nmap <C-H> <C-W>h
+  nmap <C-L> <C-W>l
+
+" handy macro expansion
+  abbrev Lidsa Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  iabbrev rdebug require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger
+  abbrev hte the
+
+" rails.vim mappings
+  map <Leader>oc :Rcontroller<Space>
+  map <Leader>ov :Rview<Space>
+  map <Leader>om :Rmodel<Space>
+  map <Leader>oh :Rhelper<Space>
+  map <Leader>oj :Rjavascript<Space>
+  map <Leader>os :Rstylesheet<Space>
+  map <Leader>oi :Rintegration<Space>
+
+" select the lines which were just pasted
+  nnoremap vv `[V`]
+
+

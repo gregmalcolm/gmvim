@@ -1,3 +1,6 @@
+" bring in the bundles
+call pathogen#runtime_append_all_bundles()
+
 " * General Settings
 scriptencoding utf-8
 
