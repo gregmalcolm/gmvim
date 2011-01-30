@@ -1,0 +1,5 @@
+Greg's personal gvim configration.
+
+I'm planning on making all my portable gvim configs portable through this repo.
+
+NOTE: Running mac_setup.sh will blow away your old vim configuration and create link to the one in this folder instead
