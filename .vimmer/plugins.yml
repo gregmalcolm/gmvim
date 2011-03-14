@@ -10,3 +10,4 @@ vim-git: https://github.com/tpope/vim-git.git
 nerdtree: https://github.com/scrooloose/nerdtree.git
 command-t: git://git.wincent.com/command-t.git
 vim-surround: https://github.com/tpope/vim-surround.git
+tcomment_vim: https://github.com/tomtom/tcomment_vim.git
